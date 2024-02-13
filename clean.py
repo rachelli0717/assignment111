@@ -16,3 +16,7 @@ def clean_data(input1, input2,output):
 
 if __name__ == "__main__":
     clean_data( "respondent_contact.csv", "respondent_other.csv", "cleaned_data.csv")
+
+    cleaned = pd.read_csv("cleaned_data.csv")
+
+    print("Output file shape:", cleaned.shape)
